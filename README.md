@@ -20,18 +20,18 @@ The best way to set this project up is by using Docker.
 
 ### API Gateway
 
-This is a application that uses both HTTP and TCP as sources to listen to requests from. This is the entry point to the entire platform. It forwards the request by publishing a message to the server, and then the server distributes requests to the services.
+This is a application that uses TCP as sources to listen to requests from. This is the entry point to the entire platform. It forwards the request by publishing a message to the server, and then the server distributes requests to the microservices.
 
 ### Book Microservice
 
-This is a CRUD opration microservice that have the following services - add-book, book-details/:bookID, all-books, edit-book/:bookID, and remove-book/:bookID APIs to create, update and delete records from the books table.
+The book microservice is a CRUD opration microservice that have the following API services - add-book, book-details/:bookID, all-books, edit-book/:bookID, and remove-book/:bookID APIs to create, update and delete records from the books table.
 
 ### Order Microservice
 
-In this microservices following services defined - create-order, order-details/:orderID, all-user-orders/:userID, and update-order-status/:orderID
+In this microservices following services are defined - create-order, order-details/:orderID, all-user-orders/:userID, and update-order-status/:orderID
 
 ### Data Modeling
-DTO models are used
+DTO models are used for the data modeling
 
 ### CRUD Operations
 Both Book and Order services have CRUD operation APIs
